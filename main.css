@@ -1,14 +1,28 @@
+:root {
+    --InkBlack: #02111B;
+    --Gunmetal: #3F4045;
+    --ShadowGray: #30292F;
+    --BlueSlate: #5D737E;
+    --LightBlue: #aab;
+    --White: #FCFCFC;
+}
+
+* {
+    color:var(--Gunmetal);
+}
+
 body {
-    background-color: rgb(255, 255, 255);
     margin:0px;
+    background-color:var(--White)
 }
 
 .Nav-Main {
     position: fixed;
     width:100%;
     height:auto;
-    background-color: white;
+    background-color: var(--White);
     display:flex;
+    
 }
 
 .Nav-Main a {
@@ -45,19 +59,22 @@ button {
     display:flex;
     align-items: center;
     justify-content: center;
-    height:800px; 
+    height:900px; 
     width:100%; 
-    background-image:linear-gradient(to bottom, #766, #615243, #615243, #615243, #615243, #000);
+    background-image:linear-gradient(to bottom, var(--White), var(--LightBlue), var(--BlueSlate));
     h1 {
         font-size: calc(1rem + 4vw + 4vh);
+        color: var(--Gunmetal);
     }
 }
+
 .Index-Body {
     display:flex;
     flex-direction: column;
     align-items: center;
     text-align:center;
     padding:10px;
+    padding-bottom: 200px;
 }   
 
 .Index-Body p {
@@ -66,7 +83,6 @@ button {
 
 .Home-Body {
     display:inline-block;
-    background-color:white;
     width:100%;
     min-height: 1200px;
 }
@@ -120,14 +136,13 @@ button {
     border-style:inset;
     border-radius: 10px;
     border-width: 1px;
-    background-color:#333;
-    
+    background-color:var(--ShadowGray);
 }
 
 
 .Resume-Body {
     display: inline-block;
-    background-color:white;
+    background-color:var(--White);
     width:100%;
     min-height: 20vh;
 }
@@ -186,7 +201,7 @@ button {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #aab;
+    background-color: var(--LightBlue);
     width:100%;
     height:100%;
     padding:10px;
